@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navegacion{
+  background-color: #46494b;
+  
+  
+}
+
+.bar{
+  display: flex;
+  color: white;
+  align-items: center;
+  text-align: right;
+  
+
+}
+li{
+  list-style: none;
+  cursor: pointer;
+  padding: 1.5vw;
+  transition: all .3s ease 0s;
+  color: w;
+}
+li:hover{
+  color: #00b69c;
+}
+
+.carrito{
+  display: flex;
+  color: #ffa43a;
+  list-style: none;
+  align-items: center;
+  
+
+}
+.shop{
+  color: rgb(248, 243, 243);
+  text-align: left;
+  margin-left: 30px;
+  
+}
+.smarth{
+  color: #00b69c;
+}
+.categorias{
+  position: relative;
+}
+.subcategoria{
+  display: none;
+  position: absolute;
+  margin-top: 1.5vw;
+}
+.subcategoria > li{
+  width: 125px;
+  transform: translate(-20px);
+  border-bottom: solid 1px #fff;
+  text-align: center;
+  background-color: #46494b;
+}
+.subcategoria > li:hover {
+  background-color: #00b69c;
+  color: white;
+}
+.categorias:hover > .subcategoria{
+  display: block;
+}
+
+
+
+
