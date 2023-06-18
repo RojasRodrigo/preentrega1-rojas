@@ -10,6 +10,8 @@
 
 .navegacion{
   background-color: #46494b;
+  text-decoration: none;
+  
   
   
 }
@@ -19,17 +21,27 @@
   color: white;
   align-items: center;
   text-align: right;
+  text-decoration: none;
+  justify-content:space-around;
+  list-style: none;
+  padding: 1.5vw;
   
-
 }
-li{
+
+.home{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.lis{
   list-style: none;
   cursor: pointer;
   padding: 1.5vw;
   transition: all .3s ease 0s;
-  color: w;
+  
 }
-li:hover{
+.lis:hover{
   color: #00b69c;
 }
 
@@ -52,14 +64,16 @@ li:hover{
 }
 .categorias{
   position: relative;
+  text-decoration: none;
+  
 }
 .subcategoria{
-  display: none;
+  display:none;
   position: absolute;
   margin-top: 1.5vw;
 }
 .subcategoria > li{
-  width: 125px;
+  width: 120px;
   transform: translate(-20px);
   border-bottom: solid 1px #fff;
   text-align: center;

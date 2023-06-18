@@ -1,0 +1,7 @@
+.Cards-List {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.Style-Card{
+    margin: 10;
+}
