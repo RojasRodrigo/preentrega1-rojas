@@ -7,7 +7,7 @@ const NavBar = () => {
         
         <nav className='navegacion'>
             <ul className = "bar"> 
-            <h2 className='shop'>Shop<span className='smarth'>Smart</span></h2>
+            <Link to = "/"><h2 className='shop'>Shop<span className='smarth'>Smart</span></h2></Link>
 
                     <Link className="home" to="/">Home</Link>
 
@@ -15,18 +15,17 @@ const NavBar = () => {
                         Categorias
                         <ul className="subcategoria">
                             
-                            <Link className='lis' to="/MensClothing">MensClothing</Link>
-                            <Link className='lis' to="/WomensClothing">WomensClothing</Link>
-                            <Link className='lis' to="/Jawelery">Jawelery</Link>
-                            <Link className='lis' to="/Electronic">Electronica</Link>
+                            <Link className='lis' to="/category/men's clothing/">MensClothing</Link>
+                            <Link className='lis' to="/category/women's clothing">WomensClothing</Link>
+                            <Link className='lis' to="/category/jewelery">jewelery</Link>
+                            <Link className='lis' to="/category/electronics">electronics</Link>
                         </ul>
                     </li>
-
                         <li className="categorias">
                         Servicios
                         <ul className="subcategoria">
-                            <li>Pedidos</li>
-                            <li>Entregas a Domicilio</li>
+                            <Link className='lis' to ="/Orders">Orders</Link>
+                            <Link className='lis' to = "/HomeDelivery">HomeDelivery</Link>
                             
                         </ul>
                     </li>

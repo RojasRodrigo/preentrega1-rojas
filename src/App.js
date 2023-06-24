@@ -8,13 +8,13 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import Header from "./components/Header/Header";
 
 //Pages
-import HomePage from "./components/Pages/HomePage";
-import WomensClothingPage from "./components/Pages/WomensClothingPage";
-import MensClothingPage from "./components/Pages/MensClothingPage";
-import ElectronicPage from "./components/Pages/ElectronicPage";
-import JaweleryPage from "./components/Pages/JaweleryPage";
+import HomePage from "./components/Pages/HomePage/HomePage";
 import DetailPage from "./components/Pages/DetailPage/DetailPage";
+import OrdersPage from "./components/Pages/OrdersPage/Orders";
+import HomeDeliveryPage from "./components/Pages/HomeDeliveryPage/HomeDeliveryPage";
+import Error from "./components/Pages/ErrorPage.js/ErrorPage"
 //import { RouteSharp } from "@mui/icons-material";
+import Category from "./components/Pages/Category/Category";
 
 
 
@@ -27,16 +27,17 @@ const App = () => {
         
         <Routes>
           <Route path="/" element ={<HomePage />}/>
-          <Route path="/WomensClothing" element ={<WomensClothingPage />}/>
-          <Route path="/MensClothing" element ={<MensClothingPage />}/>
-          <Route path="/Electronic" element ={<ElectronicPage />}/>
-          <Route path="/Jawelery" element ={<JaweleryPage />}/>
           <Route path="/Detail/:id" element ={<DetailPage />}/>
+          <Route path="/Orders" element ={<OrdersPage />}/>
+          <Route path="/HomeDelivery" element ={<HomeDeliveryPage />}/>          
+          <Route path="*" element ={<Error />}/> 
+          <Route path="/category/:categoryId" element ={<Category />}/>
+
         </Routes>
       
       </div>
 
-      <div>
+      <div className="lola">
       
       <ItemListContainer greeting="¡Tu tienda online de confianza!"/>
     </div>

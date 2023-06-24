@@ -16,13 +16,6 @@ useEffect(() => {
             fetch("https://fakestoreapi.com/products")
             .then(res=>res.json())
             .then(json=>setChars(json))
-
-
-
-    /*axios("https://rickandmortyapi.com/api/character").then((json) => 
-    setChars (json.data.results)
-    );*/
-
 }, [])
 
     return (

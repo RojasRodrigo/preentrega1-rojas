@@ -18,6 +18,7 @@ const DetailPage = () => {
 
 }, [id])
 
+
   return (
     <div className='detail'> {char.id? <CardUser char={char}/> : null}</div>
   )

@@ -66,27 +66,29 @@
   position: relative;
   text-decoration: none;
   
+  
 }
 .subcategoria{
   display:none;
   position: absolute;
   margin-top: 1.5vw;
+
+
 }
-.subcategoria > li{
+.subcategoria > .lis{
   width: 120px;
   transform: translate(-20px);
   border-bottom: solid 1px #fff;
   text-align: center;
   background-color: #46494b;
+  text-decoration: none;
+  color: #00b69c;
+  
 }
-.subcategoria > li:hover {
+.subcategoria > .lis:hover {
   background-color: #00b69c;
   color: white;
 }
 .categorias:hover > .subcategoria{
   display: block;
 }
-
-
-
-

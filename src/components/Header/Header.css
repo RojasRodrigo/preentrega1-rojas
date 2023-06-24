@@ -8,12 +8,17 @@ align-items: center;
 height: 30vh;
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 25px;
+
+
+
 }
 .online{
     color: rgb(117, 115, 115);
     font-size: none;
     font-style: none;
+    
 }
 .store{
     color: #00b69c;
+    
 }
